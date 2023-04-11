@@ -20,22 +20,23 @@ public class KeyInput extends KeyAdapter {
 			if(tempObject.getId() == ID.Player) {
 				// key events for player 1
 				
-				if (key == KeyEvent.VK_W) tempObject.setVelY(-5);
-				if (key == KeyEvent.VK_A) tempObject.setVelX(-5);
-				if (key == KeyEvent.VK_S) tempObject.setVelY(5);
-				if (key == KeyEvent.VK_D) tempObject.setVelX(5);
+				if (key == KeyEvent.VK_W) tempObject.setVelY(-10);
+				if (key == KeyEvent.VK_A) tempObject.setVelX(-10);
+				if (key == KeyEvent.VK_S) tempObject.setVelY(10);
+				if (key == KeyEvent.VK_D) tempObject.setVelX(10);
 			}
 			
 			if(tempObject.getId() == ID.Player2) {
 				// key events for player 2
 				
-				if (key == KeyEvent.VK_UP) tempObject.setVelY(-5);
-				if (key == KeyEvent.VK_LEFT) tempObject.setVelY(-5);
-				if (key == KeyEvent.VK_DOWN) tempObject.setVelY(5);
-				if (key == KeyEvent.VK_RIGHT) tempObject.setVelY(5);
+				if (key == KeyEvent.VK_UP) tempObject.setVelY(-10);
+				if (key == KeyEvent.VK_LEFT) tempObject.setVelY(-10);
+				if (key == KeyEvent.VK_DOWN) tempObject.setVelY(10);
+				if (key == KeyEvent.VK_RIGHT) tempObject.setVelY(10);
 			}
 			
 		}
+		if (key == KeyEvent.VK_ESCAPE) System.exit(1);
 	}
 	
 	public void keyReleased(KeyEvent e) {
